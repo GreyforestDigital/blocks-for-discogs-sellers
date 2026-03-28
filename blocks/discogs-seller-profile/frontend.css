@@ -1,0 +1,31 @@
+/* GLOBAL */
+.discogs-seller-profile * {margin:0;padding:0;position:relative;box-sizing:border-box;}
+.discogs-seller-profile > h2 {margin:0 auto .5em auto;display:block;}
+.is-root-container .discogs-seller-profile a {pointer-events:none;}
+
+.discogs-seller-profile .discogs-profile-wrap {position:relative;border:1px solid #ccc;}
+.discogs-seller-profile .discogs-profile-banner {display:block;background:#fed456;aspect-ratio:3 / 1;}
+.discogs-seller-profile .discogs-profile-banner img {display:block;height:100%;width:100%;object-fit:cover;}
+.discogs-seller-profile .discogs-profile-avatar {display:block;height:100px;width:100px;margin:20px auto 0 auto;border-radius:100%;border:3px solid #000;z-index:10;position:relative;overflow:hidden;transform:scale(1);transition:.35s ease;}
+.discogs-seller-profile .discogs-profile-wrap.discogs-banner-visible .discogs-profile-avatar {margin-top:-50px;}
+.discogs-seller-profile .discogs-profile-avatar:hover {cursor:pointer;transform:scale(1.05) rotate(2deg);transition:.35s ease;}
+.discogs-seller-profile .discogs-profile-avatar img {display:block;height:100px;width:100px;border-radius:100%;margin:-3px;padding:0;border:0;}
+.discogs-seller-profile .discogs-profile-title h2 {display:block;text-align:center;padding:.5em .5em .1em .5em;margin:0;color:inherit;}
+.discogs-seller-profile .discogs-profile-registration small {display:block;text-align:center;padding:0;margin:0;}
+.discogs-seller-profile .discogs-inventory-link a,
+.discogs-seller-profile .discogs-profile-link a {font-size:.8em;display:inline-block;padding:.5em 1em;margin:.5em 5px .5em 0;text-align:center;background:#111;color:#fff;text-decoration:none;}
+.discogs-seller-profile .discogs-inventory-link a:hover,
+.discogs-seller-profile .discogs-profile-link a:hover {opacity:0.9;text-decoration:underline;}
+.discogs-seller-profile .discogs-profile-location P {display:block;padding:.5em .5em 0 .5em;text-align:center;margin:0;font-size:.7em;}
+.discogs-seller-profile .discogs-profile-text P {display:block;padding:0 10px 10px 10px;text-align:justify;margin:0 auto;font-size:.8em;max-width:50em;color:inherit;}
+.discogs-seller-profile .discogs-profile-stats {display:flex;justify-content:space-evenly;flex-wrap:wrap;margin:20px auto;max-width:50em;}
+.discogs-seller-profile .discogs-profile-stats P {display:block;padding:0 .5em 0 .5em;text-align:center;margin:0;color:inherit;font-weight:bold;text-transform:uppercase;font-size:.7em;}
+.discogs-seller-profile .discogs-profile-stats small {display:block;padding:0 .5em;text-align:center;font-size:.8em;color:inherit;}
+.discogs-seller-profile .discogs-profile-num-for-sale {display:block;width:100%;margin:30px auto 0 auto;text-align:center;}
+.discogs-seller-profile .discogs-profile-num-for-sale P {font-weight:normal;text-transform:none;font-size:1em;display:inline-block;border-radius:15px;padding:.5em 1em;border:1px solid #ccc;}
+.discogs-seller-profile .discogs-profile-content {padding:0 20px;margin:0;}
+.discogs-seller-profile .discogs-profile-footer {display:flex;justify-content:center;flex-flow:wrap;margin:0;padding:10px 20px 20px 20px;}
+.discogs-seller-profile .discogs-profile-logo svg {width:70px;margin:0px auto 25px auto;display:block;}
+.discogs-seller-profile .discogs-profile-buyer-rating svg {width:100px;margin:0px auto;display:block;}
+.discogs-seller-profile .discogs-profile-seller-rating svg {width:100px;margin:0px auto;display:block;}
+.discogs-seller-profile .discogs-profile-rating-percentage {font-size:2em;margin:0;padding:0;}

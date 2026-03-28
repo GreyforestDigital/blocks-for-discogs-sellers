@@ -1,0 +1,33 @@
+/* GLOBAL */
+.discogs-seller-listing * {margin:0;padding:0;position:relative;box-sizing:border-box;}
+.is-root-container .discogs-seller-listing a {pointer-events:none;}
+
+/* LAYOUT: LISTING */
+.discogs-seller-listing {display:grid;grid-template-columns:1fr;padding:0;border:1px solid rgba(0,0,0,0.0);border-radius:0;text-align:left;list-style:none;}
+.discogs-seller-listing .layout-sidebyside {display:grid;grid-template-columns:1fr 1fr;}
+.discogs-seller-listing .discogs-release-image a {display:block;aspect-ratio:1/1;border:1px solid rgba(0,0,0,0.03);}
+.discogs-seller-listing .discogs-release-image img {display:block;border:0;padding:0;margin:0;width:100%;max-width:100%;height:100%;object-fit:contain;}
+.discogs-seller-listing .discogs-release-information {padding:2rem;display:block;grid-template-columns:1fr;}
+.discogs-seller-listing .discogs-release-information h5 {font-style:italic;margin:0;padding:0 0 .5em 0;font-size:1em;word-break:break-word;}
+.discogs-seller-listing .discogs-release-information h6 {font-size:.8em;padding:0 0 .5em 0;}
+.discogs-seller-listing .discogs-release-information span {display:block;padding:1px 0;font-size:.7em;}
+.discogs-seller-listing .discogs-release-information P {display:block;padding:0 0 .5em 0;line-height:1.4;font-size:.7em;}
+.discogs-seller-listing .discogs-release-information small {display:block;padding:5px 0;text-align:left;}
+.discogs-seller-listing .discogs-release-information .discogs-release-titles {text-align:left;}
+.discogs-seller-listing .discogs-release-information .discogs-release-titles .discogs-listing-price.sold {display:inline-block;font-weight:bold;color:#ff0000;}
+.discogs-seller-listing .discogs-release-information .discogs-release-meta {text-align:left;}
+.discogs-seller-listing .discogs-release-information .discogs-buttons {padding:0;}
+.discogs-seller-listing .discogs-release-information .discogs-buttons a {font-size:.7em;display:inline-block;padding:.5em 1em;margin:1rem 0;text-align:center;background:#111;color:#fff;text-decoration:none;}
+
+@media only screen and (max-width : 1280px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+.discogs-seller-listing .layout-sidebyside {display:grid;grid-template-columns:1fr;}
+
+}
+
+@media only screen and (max-width : 468px) {
+
+}

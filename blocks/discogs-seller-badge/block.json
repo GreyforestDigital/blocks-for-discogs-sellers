@@ -1,0 +1,40 @@
+{
+	"apiVersion": 3,
+	"name": "blocks-for-discogs/discogs-seller-badge",
+	"title": "Discogs Seller Badge",
+	"description": "Display a seller profile badge",
+	"keywords": ["discogs","seller","profile","badge","inventory"],
+	"category": "blocks-for-discogs",
+	"icon": {
+		"background": "#333333", 
+		"foreground": "#ffffff",
+		"src": "album"
+	},
+	"supports": {
+		"html": false,
+		"anchor": true,
+		"align": ["wide","full"],
+		"spacing": {
+			"margin": true,
+			"padding": true
+		}
+	},
+    "attributes": {
+		"blockID": { "type": "string", "default": "" },
+		"badge_background_color": { "type": "string", "default": "#FFFFFF" },
+		"badge_items_for_sale_color": { "type": "string", "default": "#171717" },
+		"badge_stars_color": { "type": "string", "default": "#f5b301" },
+		"badge_ratings_color": { "type": "string", "default": "#171717" },
+		"badge_seller_name_color": { "type": "string", "default": "#171717" },
+		"badge_wrap_border": { "type": "object",  "default": { "color":"", "style":"", "width":"", "radius":"" } },
+		"badge_banner_opacity": { "type": "number", "default": 5, "min": 0, "max": 100, "step": 1 },
+		"display_banner_background": { "type": "boolean", "default": true },
+		"display_profile_name_or_username": { "type": "string", "default": "username" },
+		"username": { "type": "string", "default": "" }
+     },
+	"editorScript": "file:./index.js",
+	"style": "file:./frontend.css",
+	"viewScript": "file:./frontend.js",
+	"render": "file:./render.php"
+}
+

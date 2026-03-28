@@ -1,0 +1,53 @@
+{
+	"apiVersion": 3,
+	"name": "blocks-for-discogs/discogs-seller-profile",
+	"title": "Discogs Seller Profile",
+	"description": "Display a seller profile",
+	"keywords": ["discogs","seller","profile","marketplace","inventory"],
+	"category": "blocks-for-discogs",
+	"icon": {
+		"background": "#333333", 
+		"foreground": "#ffffff",
+		"src": "album"
+	},
+	"supports": {
+		"html": false,
+		"anchor": true,
+		"align": ["wide","full"],
+		"spacing": {
+			"margin": true,
+			"padding": true
+		}
+	},
+    "attributes": {
+		"blockID": { "type": "string", "default": "" },
+		"profile_banner_aspectRatioHeight": { "type": "string", "default": "1" },
+		"profile_banner_aspectRatioWidth": { "type": "string", "default": "4" },
+		"profile_banner_background_color": { "type": "string", "default": "#171717" },
+		"profile_discogs_logo_color": { "type": "string", "default": "#171717" },
+		"display_inventory_link": { "type": "boolean", "default": true },
+		"profile_link_background_color": { "type": "string", "default": "#171717" },
+		"display_profile_avatar": { "type": "boolean", "default": true },
+		"display_profile_banner": { "type": "boolean", "default": true },
+		"display_profile_link": { "type": "boolean", "default": true },
+		"display_profile_location": { "type": "boolean", "default": true },
+		"display_profile_name_or_username": { "type": "string", "default": "username" },
+		"display_profile_num_for_sale": { "type": "boolean", "default": true },
+		"display_profile_buyer_num_ratings": { "type": "boolean", "default": true },
+		"display_profile_buyer_rating": { "type": "boolean", "default": true },
+		"display_profile_buyer_rating_stars": { "type": "boolean", "default": true },
+		"display_profile_seller_num_ratings": { "type": "boolean", "default": true },
+		"display_profile_seller_rating": { "type": "boolean", "default": true },
+		"display_profile_seller_rating_stars": { "type": "boolean", "default": true },
+		"display_profile_registration_date": { "type": "boolean", "default": true },
+		"display_profile_text": { "type": "boolean", "default": true },
+		"display_profile_title": { "type": "boolean", "default": true },
+		"profile_wrap_border": { "type": "object",  "default": { "color":"", "style":"", "width":"", "radius":"" } },
+		"username": { "type": "string", "default": "" }
+     },
+	"editorScript": "file:./index.js",
+	"style": "file:./frontend.css",
+	"viewScript": "file:./frontend.js",
+	"render": "file:./render.php"
+}
+

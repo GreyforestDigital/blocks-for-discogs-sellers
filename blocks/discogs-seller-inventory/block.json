@@ -1,0 +1,56 @@
+{
+	"apiVersion": 3,
+	"name": "blocks-for-discogs/discogs-seller-inventory",
+	"title": "Discogs Seller Inventory",
+	"description": "Display a seller's inventory as grid or list",
+	"keywords": ["discogs","seller","inventory","collection","marketplace"],
+	"category": "blocks-for-discogs",
+	"icon": {
+		"background": "#333333", 
+		"foreground": "#ffffff",
+		"src": "album"
+	},
+	"supports": {
+		"html": false,
+		"anchor": true,
+		"align": ["wide","full"],
+		"spacing": {
+			"margin": true,
+			"padding": true
+		}
+	},
+    "attributes": {
+		"blockID": { "type": "string", "default": "" },
+		"destination_url": { "type": "string", "default": "discogs" },
+		"destination_custompage": { "type": "string", "default": "" },
+		"display_item_allow_offers": { "type": "boolean", "default": true },
+		"display_item_comments": { "type": "boolean", "default": true },
+		"display_item_grading": { "type": "boolean", "default": true },
+		"display_item_price": { "type": "boolean", "default": true },
+		"display_pagination": { "type": "boolean", "default": true },
+		"display_purchase_button": { "type": "boolean", "default": true },
+		"display_release_artist": { "type": "boolean", "default": true },
+		"display_release_catalog_number": { "type": "boolean", "default": true },
+		"display_release_description": { "type": "boolean", "default": true },
+		"display_release_format": { "type": "boolean", "default": true },
+		"display_release_image": { "type": "boolean", "default": true },
+		"display_release_stats": { "type": "boolean", "default": true },
+		"display_release_title": { "type": "boolean", "default": true },
+		"display_release_year": { "type": "boolean", "default": true },
+		"display_section_title": { "type": "boolean", "default": true },
+		"layout_columns": { "type": "number", "default": 3 },
+		"layout_style": { "type": "string", "default": "cards" },
+		"purchase_button_background_color": { "type": "string", "default": "#111111" },
+		"sorting_allow_user_sort": { "type": "boolean", "default": true },
+		"sorting_per_page": { "type": "string", "default": "50" },		
+		"sorting_sort": { "type": "string", "default": "listed" },
+		"sorting_sort_order": { "type": "string", "default": "asc" },
+		"title_display": { "type": "string", "default": "artist_title" },
+		"username": { "type": "string", "default": "" }
+     },
+	"editorScript": "file:./index.js",
+	"style": "file:./frontend.css",
+	"viewScript": "file:./frontend.js",
+	"render": "file:./render.php"
+}
+
